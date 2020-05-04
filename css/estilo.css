@@ -1,0 +1,70 @@
+/*Formatação geral*/
+
+body{
+    font-family: "Libre+Franklin", cursive; /*definir a fonte*/
+}
+
+h1, h2, h3{
+    margin: 0;
+    font-family: "Libre+Franklin";
+    font-weight: 700; /*tamanho da fonte*/
+
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*cabeçalho/barra de navegação*/
+
+.logo img{
+    border-radius: 50%;
+}
+
+nav {
+    display: flex; /*Para se adaptar a cada navegador*/
+    flex-direction: column; /*para deixar um do lado do outro*/
+    align-items: center; /*Para deixar os conteúdos centralizados '-'*/
+    background-color: #0F1923; 
+    padding: 30px;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+nav ul li{
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em; /*vai ser uma fonte responsiva, adaptavel*/
+    padding: 2%;
+}
+
+nav ul li a{
+    display: inline-block; /*"aceita mais as medidas do padding"*/
+    padding: 10px 0; /*direita */
+    width: 100%;
+    text-decoration: none;
+    color: #FF1493;
+
+}
+
+@media screen and (min-width: 768px){
+    /*Cabeçalho ou barra de navegação*/
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+
+}
