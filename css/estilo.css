@@ -15,11 +15,16 @@ p{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.container{
+    width: 100%;
+}
+
 /*cabeçalho/barra de navegação*/
 
 .logo img{
     border-radius: 50%;
 }
+
 
 nav {
     display: flex; /*Para se adaptar a cada navegador*/
@@ -55,7 +60,119 @@ nav ul li a{
 
 }
 
-@media screen and (min-width: 768px){
+/*Header*/
+
+header{
+    background-image: url('../img/imagem-teste.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+header p{
+    margin-bottom: 2em;
+    font-size: 1.7em;
+
+}
+
+.botao{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #0F1923;
+    font-size: 1.0em;
+    border-radius: 10%;
+    transition-duration: 10ms;
+}
+
+.botao:hover{
+    background-color: #FF1493;
+    color: white;
+}
+
+/*Sobre*/
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    color: #FF1493;
+}
+
+#sobre h2{
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+.foto img{
+    width: 60%
+}
+
+.foto{
+    float: left;
+    width: 50%;
+}
+
+.textosobre{
+    float: right;
+    width: 50%;
+}
+
+/*especialidades*/
+#especialidades{
+    padding: 20px;
+    display: flex; /*adaptar-se a todos navegadores*/
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0  auto;
+}
+
+#especialidades div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#especialidades p{
+    line-height: 1.5;
+    margin: 2vh;
+    font-size: 1.2em;
+}
+
+#especialidades img{
+    margin: 10px 0; /*cima e baixo, direita e esquerda*/
+}
+
+#especialidades h2{
+    font-size: 2em;
+}
+
+#especialidades a{
+    color: black;
+    text-decoration: none;
+    transition-delay: 10ms;
+}
+
+#especialidades a:hover{
+    cursor: pointer;
+    color: #FF1493;
+    text-decoration: underline;
+
+
+}
+
+@media screen and (min-width: 768px){ /*fazermos o site ser resposivo, cada item tem que estar aqui para ser responsivo :)*/
     /*Cabeçalho ou barra de navegação*/
     nav{
         flex-direction: row;
@@ -67,4 +184,49 @@ nav ul li a{
         width: 70%;
     }
 
+    /*header*/
+    header{
+        height: 60vh;
+        justify-content: center;
+    }
+
+    /*Sobre*/
+
+    #sobre{
+        flex-direction: row; /*Formato de linha*/
+        flex-wrap: wrap; /*Se ocupar muito a tela, fazer a "quebra"*/
+        align-items: center;
+        height: 90vh;
+        justify-content: center;
+        min-height: 80vh;
+
+    }
+    #sobre h2{
+        text-align: center;
+        width: 100%;
+    }
+
+    #sobre div{
+        flex-grow: 1;
+        flex-basis: 300px;
+        padding: 0 10px;
+    }
+
+    /*Especialidades*/
+    #especialidades{
+        flex-direction: row;
+        flex-wrap: wrap; 
+        align-items: flex-start; /*9? Começa bem perto dos cantos da página*/
+        max-width: 1124px; /*Mudar após escolher as imagens!!*/
+        margin: 0 auto;
+    }
+    #especialidades h2{
+        text-align: center;
+        width: 100%;
+    }
+    #especialidades div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
 }
