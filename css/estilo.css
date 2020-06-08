@@ -25,7 +25,6 @@ p{
     border-radius: 50%;
 }
 
-
 nav {
     display: flex; /*Para se adaptar a cada navegador*/
     flex-direction: column; /*para deixar um do lado do outro*/
@@ -172,6 +171,178 @@ header p{
 
 }
 
+/*Competências*/
+#competencias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#competencias h2{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+#competencias h3{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: center;
+}
+#competencias p{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: center;
+}
+#competencias a{
+    text-decoration: none;
+}
+#competencias img{
+    width: 96%;
+    margin-bottom: 0;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+#competencias .comp p{
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 1.5;
+}
+
+/*parte dos trabalhos :)*/
+
+
+
+#jobs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#jobs .trab h2{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+#jobs .trab h3{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: center;
+}
+#jobs .trab p{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: center;
+}
+#jobs .trab a{
+    text-decoration: none;
+}
+#jobs .trab img{
+    width: 96%;
+    margin-bottom: 0;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+#jobs .trab p{
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 1.5;
+}
+
+#jobs .trab img:hover{
+    -ms-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+#jobs .trab img{
+    border: 10px groove #0F1923;
+
+}
+/*Hobbies*/
+#hobby{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#hobby .trab h2{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+#hobby .trab p{
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 1.5;
+}
+
+#hobby .trab img{
+    border: 10px groove #0F1923;
+    width: 96%;
+    margin-bottom: 0;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+/*Contato*/
+#Contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+#Contato h2{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: black;
+}
+#Contato > p{
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#Contato a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/*footer*/
+
+footer{
+    text-align: center;
+    width: 100%;
+    background-color: #0F1923;
+    color: #FF1493;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 @media screen and (min-width: 768px){ /*fazermos o site ser resposivo, cada item tem que estar aqui para ser responsivo :)*/
     /*Cabeçalho ou barra de navegação*/
     nav{
@@ -228,5 +399,60 @@ header p{
         flex-grow: 1;
         flex-basis: 150px;
         padding: 0 10px;
+    }
+    /*competencias*/
+    #competencias{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #competencias h2, h3{
+        width: 100%;
+        text-align: center;
+    }
+    #competencias .comp{
+        width: 32%;
+        text-align: center;
+    }
+    /*trabs*/
+    #jobs{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #jobs h2, h3{
+        width: 100%;
+        text-align: center;
+    }
+    #jobs .trab{
+        width: 32%;
+        text-align: center;
+    
+    }
+    /*hobbies '-'*/
+    #hobby h2{
+        text-align: center;
+        width: 100%;
+    }
+    #hobby p{
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+    }
+    #hobby .trab{
+        width: 96%;
+        text-align: center;
+    }
+    /*Contato*/
+    #Contato{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        max-height: 40vh;
+        width: 100%;
+    }
+    #Contato h2, #Contato p{
+        width: 100%;
+        text-align: center;
     }
 }
