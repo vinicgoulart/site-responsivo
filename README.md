@@ -1,5 +1,5 @@
 # site-responsivo
-##Sobre o Projeto (About the Project)
+## Sobre o Projeto (About the Project)
 Projeto realizado em aula durante o ano de 2020. O projeto tinha como objetivo aprofundar os nossos conhecimentos em páginas estáticas/front-end.
 No projeto foi-se utilizado o HTML e o CSS.
 
